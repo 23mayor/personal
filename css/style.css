@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.reset-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 1440px;
+    padding: 0 10%;
+}
+
+/* Header */
+
+header .content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+}
+
+header .content .container .logo {
+    width: 80px;
+    height: 80px;
+
+    margin-right: 20px;
+
+    background-image: url("../img/samgmu.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .content .container h2 {
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #333333;
+}
+
+header .content .container .menu {
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    border-right: 1px solid #E1E3E6;
+}
+
+header .content .container .menu a {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    padding: 10px;
+
+    background-color: #F2F5FA;
+    /* background-color: #006cb4; */
+    transition: background-color 0.1s linear;
+}
+
+header .content .container .menu a:hover {
+    background-color: #d2d6db;
+}
+
+header .content .container .menu a:not(:last-child) {
+    margin-right: 16px;
+}
+
+header .content .container .user {
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* About */
+
+.about .content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+
+    box-shadow: -4px 10px 40px rgba(44, 63, 88, 0.05);
+}
+
+.about .content .container .left {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+
+    border-right: 1px solid #E1E3E6;
+}
+
+.about .content .container .left .user {
+    width: 150px;
+    height: 150px;
+
+    background-image: url("../img/user.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    margin-right: 30px;
+}
+
+.about .content .container .left .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .content .container .left .info .username {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    color: #333333;
+}
+
+.about .content .container .left .info .position {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #818386;
+}
+
+.about .content .container .right {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50%;
+
+    padding-left: 60px;
+}
+
+.about .content .container .right .contacts,
+.about .content .container .right .job {
+    margin-bottom: 20px;
+}
+
+.about .content .container .right .big-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #818386;
+
+    margin-bottom: 4px;
+}
+
+.about .content .container .right p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.about .content .container .right p a {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+    transition: color 0.2s linear,
+                text-decoration 0.2 linear;
+}
+
+.about .content .container .right p a:hover {
+    color: #006cb4;
+    text-decoration: underline;
+}
